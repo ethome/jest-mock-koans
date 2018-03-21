@@ -1,0 +1,17 @@
+{
+  "name": "enzyme-mock-koans",
+  "version": "1.0.0",
+  "description": "Tests to drive learning about enzyme mocks",
+  "repository": "git@github.com:ethome/enzyme-mock-koans.git",
+  "author": "Ed Thome <ethome@thoughtworks.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "jest": "^22.4.3"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "yarn test --watchAll"
+  }
+}
