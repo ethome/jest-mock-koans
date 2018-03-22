@@ -1,8 +1,8 @@
 {
-  "name": "enzyme-mock-koans",
+  "name": "jest-mock-koans",
   "version": "1.0.0",
   "description": "Tests to drive learning about enzyme mocks",
-  "repository": "git@github.com:ethome/enzyme-mock-koans.git",
+  "repository": "git@github.com:ethome/jest-mock-koans.git",
   "author": "Ed Thome <ethome@thoughtworks.com>",
   "license": "MIT",
   "dependencies": {
