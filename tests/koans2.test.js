@@ -3,6 +3,7 @@ import playWithCat from '../playWithCat'
 
 const FILL_IN_HERE = 'FILL_IN_HERE'
 
+// https://facebook.github.io/jest/docs/en/jest-object.html#jestspyonobject-methodname
 describe('jest.spyOn()', () => {
   test('should be able to assert spy was called', () => {
     const someCat = new Cat()
