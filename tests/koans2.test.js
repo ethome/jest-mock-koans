@@ -1,5 +1,5 @@
-import Cat from './cat'
-import playWithCat from './playWithCat'
+import Cat from '../cat'
+import playWithCat from '../playWithCat'
 
 const FILL_IN_HERE = 'FILL_IN_HERE'
 

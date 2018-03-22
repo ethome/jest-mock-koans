@@ -1,5 +1,5 @@
-import isPhoneAffordable from './isPhoneAffordable'
-import getMeal from './getMeal'
+import isPhoneAffordable from '../src/isPhoneAffordable'
+import getMeal from '../src/getMeal'
 
 const FILL_IN_HERE = 'FILL_IN_HERE'
 
