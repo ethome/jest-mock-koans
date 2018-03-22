@@ -19,9 +19,9 @@ describe('jest mocks', () => {
     })
     
     test('should use mock function in place of real function', () => {
-      const mockGetPhonePrice = jest.fn().mockReturnValue(700)
+      const mockGetPhonePrice = jest.fn().mockReturnValue(FILL_IN_HERE)
       
-      expect(isPhoneAffordable(FILL_IN_HERE, mockGetPhonePrice)).toEqual(true)
+      expect(isPhoneAffordable(400, mockGetPhonePrice)).toEqual(true)
     })
     
     test('should set mock implementation', () => {
