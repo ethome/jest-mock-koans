@@ -9,15 +9,23 @@ describe('jest.fn()', () => {
   test('should create function with mock implementation', () => {
     const complexOperation = jest.fn((x) => x + 1)
     
-    expect(complexOperation(7)).toEqual(8)
+    expect(complexOperation(FILL_IN_HERE)).toEqual(8)
   })
   
   // https://facebook.github.io/jest/docs/en/mock-function-api.html#mockfnmockreturnvaluevalue
   test('should set mock return value', () => {
     const favoriteDrink = jest.fn()
-    favoriteDrink.mockReturnValue('red bull')
+    favoriteDrink.mockReturnValue(FILL_IN_HERE)
     
     expect(favoriteDrink()).toEqual('red bull')
+  })
+  
+  test('mock function can throw error', () => {
+    const findDog = jest.fn(() => { throw new Error(FILL_IN_HERE)})
+    
+    expect(() => {
+      findDog()
+    }).toThrow('Dog is missing.')
   })
   
   test('should use mock function in place of real function', () => {
@@ -65,8 +73,8 @@ describe('jest.fn()', () => {
     const drawShapes = jest.fn()
     
     drawShapes('triangle', 'square', 'octagon')
-    drawShapes('dodecahedron', 'kite', 'rhombus')
-    drawShapes('square', 'circle', 'pentagon')
+    drawShapes('dodecahedron')
+    drawShapes('kite', 'star', 'circle', 'pentagon', 'rhombus')
     
     expect(drawShapes.mock.calls[FILL_IN_HERE][FILL_IN_HERE]).toEqual('circle')
   })
